@@ -1,0 +1,33 @@
+{
+  "name": "apility/laravel-vite-components",
+  "description": "A Vite companion library for Laravel to be used together with @apility/vite-plugin-dev-manifest.",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "illuminate/view": "^8.0",
+    "illuminate/support": "^8.0"
+  },
+  "require-dev": {
+    "laravel/framework": "^8.0"
+  },
+  "config": {
+    "platform": {
+      "php": "7.4"
+    },
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Apility\\LaravelViteComponents\\": "src/"
+    }
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Apility\\LaravelViteComponents\\Providers\\LaravelViteComponentsServiceProvider"
+      ]
+    }
+  }
+}
